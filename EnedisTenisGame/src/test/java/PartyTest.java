@@ -9,10 +9,13 @@ public class PartyTest {
 	Player federer;
 	Party party;
 	
-	 	@Before
-	    public void beforeGameTest() {
+	@Before
+    public void beforeGameTest() {
 		 	nadal = new Player("rafael");
 		 	federer = new Player("roger");
 	        party = new Party(nadal, federer);
 	}
+	
+	 	
+	 	
 }
