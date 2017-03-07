@@ -27,6 +27,15 @@ public class PartyTest {
         });
         assert(party.getWinner()).equals("advantage roger");
 }
-	 	
+	 @Test
+	    public void deuceShoulBeReturned() {
+	        IntStream.rangeClosed(1, 3).forEach((Integer) -> {
+	            nadal.winPoint();
+	        });
+	        IntStream.rangeClosed(1, 3).forEach((Integer) -> {
+	            federer.winPoint();
+	        });
+	        assert(party.getWinner()).equals("deuce");
+	 }	
 	 	
 }
