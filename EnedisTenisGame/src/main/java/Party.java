@@ -9,7 +9,11 @@ public class Party {
 	}
 	public String getWinner() {
 	     if (player1.getScore() >= 3 && player2.getScore() >= 3) {
+	    	 if (player1.getScore() == player2.getScore()) {
+	             return "deuce";   
+	    	 }else{
 	    	 return "advantage " + getAdventegePlayer().getName();
+	    	 }
 	     }else{
 	    	 return player1.getScoreLabel() + ", " + player2.getScoreLabel();
 	     }
