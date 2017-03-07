@@ -15,7 +15,11 @@ public class Party {
 	    	 return "advantage " + getAdventegePlayer().getName();
 	    	 }
 	     }else{
+	    	 if (Math.abs(player2.getScore() - player1.getScore()) >= 2) { 
+	             return getAdventegePlayer().getName() + " won";
+	    	 }else{
 	    	 return player1.getScoreLabel() + ", " + player2.getScoreLabel();
+	    	 }
 	     }
 	}
 	public Player getAdventegePlayer() {
