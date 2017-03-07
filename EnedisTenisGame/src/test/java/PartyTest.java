@@ -26,7 +26,7 @@ public class PartyTest {
             federer.winPoint();
         });
         assert(party.getWinner()).equals("advantage roger");
-}
+	}
 	 @Test
 	    public void deuceShoulBeReturned() {
 	        IntStream.rangeClosed(1, 3).forEach((Integer) -> {
@@ -36,6 +36,16 @@ public class PartyTest {
 	            federer.winPoint();
 	        });
 	        assert(party.getWinner()).equals("deuce");
-	 }	
+	 }
+	 @Test
+	 public void wonShouldBeReturned() {
+	        IntStream.rangeClosed(1, 4).forEach((Integer) -> {
+	            nadal.winPoint();
+	        });
+	        IntStream.rangeClosed(1, 2).forEach((Integer) -> {
+	            federer.winPoint();
+	        });
+	        assert(party.getWinner()).equals("rafael won");
+	 }
 	 	
 }
