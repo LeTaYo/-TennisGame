@@ -1,5 +1,3 @@
-import static org.junit.Assert.*;
-
 import java.util.stream.IntStream;
 
 import org.junit.Before;
@@ -27,8 +25,8 @@ public class PartyTest {
         });
         assert(party.getWinner()).equals("advantage roger");
 	}
-	 @Test
-	    public void deuceShoulBeReturned() {
+	@Test
+	public void deuceShoulBeReturned() {
 	        IntStream.rangeClosed(1, 3).forEach((Integer) -> {
 	            nadal.winPoint();
 	        });
@@ -46,6 +44,5 @@ public class PartyTest {
 	            federer.winPoint();
 	        });
 	        assert(party.getWinner()).equals("rafael won");
-	 }
-	 	
+	 } 	
 }

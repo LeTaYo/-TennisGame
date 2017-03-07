@@ -25,8 +25,4 @@ public class Party {
 	public Player getAdventegePlayer() {
 		return (player1.getScore() > player2.getScore()) ? player1 : player2;
 	}
-
-
-
-	    
 }
