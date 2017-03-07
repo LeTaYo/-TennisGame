@@ -25,7 +25,7 @@ public class PartyTest {
         IntStream.rangeClosed(1, 4).forEach((Integer) -> {
             federer.winPoint();
         });
-        assertThat(party.getWinner()).equals("advantage roger");
+        assert(party.getWinner()).equals("advantage roger");
 }
 	 	
 	 	

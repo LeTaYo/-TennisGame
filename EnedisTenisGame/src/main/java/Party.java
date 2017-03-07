@@ -7,6 +7,18 @@ public class Party {
 	      this.player1 = player1;
 	      this.player2 = player2;
 	}
+	public String getWinner() {
+	     if (player1.getScore() >= 3 && player2.getScore() >= 3) {
+	    	 return "advantage " + getAdventegePlayer().getName();
+	     }else{
+	    	 return player1.getScoreLabel() + ", " + player2.getScoreLabel();
+	     }
+	}
+	public Player getAdventegePlayer() {
+		return (player1.getScore() > player2.getScore()) ? player1 : player2;
+	}
+
+
 
 	    
 }

@@ -17,5 +17,8 @@ public class Player {
 	}
 	public void winPoint() {	       
 		 this.score = this.score + 1;
-	} 
+	}
+	public String getScoreLabel() {
+	    return POINTSNAME.get(score);
+	}
 }
